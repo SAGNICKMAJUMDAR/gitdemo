@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shirnk-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>ASSESMENT</title>
+</head>
+
+<body>
+    <div class="container d-flex">
+        <div class="container2" id="mySidebar">
+
+            <div class="sidebar" id="bar">
+
+                <div class="logo ">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="74" height="18" viewbox="0 0 74 18">
+                        <defs>
+                            <style>
+                                .a {
+                                    fill: none;
+                                }
+
+                                .b {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <g transform="translate(-971.253 -68.958)">
+                            <rect class="a" width="74" height="18" transform="translate(971.253 68.958)" />
+                            <path class="b"
+                                d="M981.888,81.972h-5.693l-1.057,2.615h-3.885l5.942-13.461h3.75l5.961,13.461h-3.962Zm-1.117-2.807-1.73-4.308-1.73,4.308Z"
+                                transform="translate(0 0.101)" />
+                            <path class="b"
+                                d="M981.142,77.958c0-4.095,3.133-7,7.4-7a7.114,7.114,0,0,1,5.786,2.54l-2.422,2.192a3.971,3.971,0,0,0-3.171-1.576,3.847,3.847,0,0,0,0,7.691,3.976,3.976,0,0,0,3.171-1.576l2.422,2.192a7.117,7.117,0,0,1-5.786,2.538C984.275,84.958,981.142,82.054,981.142,77.958Z"
+                                transform="translate(9.966)" />
+                            <path class="b"
+                                d="M1002.58,84.587l-.038-7.135L999.08,83.26h-1.69l-3.444-5.615v6.942h-3.518V71.126h3.134l4.73,7.77,4.614-7.77h3.135l.038,13.461Z"
+                                transform="translate(19.824 0.101)" />
+                            <path class="b"
+                                d="M1012.683,81.645v2.942h-10.806V71.126h10.556v2.942h-6.787v2.27h5.979v2.846h-5.979v2.461Z"
+                                transform="translate(31.476 0.101)" />
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="hov mb-2 ">
+                    <a href="#">
+                        <img src="css_sprites.png" alt="This is home icon" class="bg-icon_home">
+                        <p>Home</p>
+                    </a>
+                </div>
+
+                <div class="dark mb-2">
+                    <a href="#">
+                        <img src="css_sprites.png" alt="This is Dashboard" class="bg-icon_dashboard">
+                        <p>Dashboard</p>
+                    </a>
+                </div>
+                <div class="hov">
+                    <a href="#">
+                        <img src="css_sprites.png" alt="This is Inbox" class="bg-icon_inbox">
+                        <p>Inbox <span
+                                style="background-color: red; padding: 5px ;border-radius: 10px 9px 10px 9px;margin-left: 170px;font-size: 10px;">New</span>
+                        </p>
+                    </a>
+                </div>
+
+                <div class="hov">
+                    <a href="#">
+                        <img src="css_sprites.png" alt="This is products" class="bg-icon_products">
+                        <p>Products</p>
+                    </a>
+                </div>
+
+                <div class="hov">
+                    <a href="#">
+                        <img src="css_sprites.png" alt="This is Admin" class="bg-icon_admin">
+                        <p>Admin</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container1 " id="l">
+            
+            
+
+            <header class="sticky-md-top">
+
+                <div class="row ">
+
+
+
+
+
+
+                    <div class="col-1 d-flex justify-content-between ">
+
+                        <div class="mybox pad" id="control">
+
+                            <a href="#" onclick="displayList();">
+
+                                <img src="css_sprites.png" alt="This is menu" class="bg-menu">
+
+                            </a>
+
+
+                        </div>
+
+                        <div class="mybox" id="search">
+                            <img src="css_sprites.png" alt="This is search icon" class="bg-icon_search">
+                        </div>
+
+                    </div>
+
+                    <div class="col mybox">
+                        <p class="srch">Search transactions,invoices and help</p>
+                    </div>
+
+
+
+
+
+
+                    <div class="col">
+
+                        <div class="row">
+
+                            <div class="col-8">
+
+                                <div class="drop" id="s"><a href="#" onclick="displayBellIcon();"><img
+                                            src="css_sprites.png" alt="this is bell icon" class="bg-notification"></a>
+                                </div>
+
+                                <div class="dropdown1" aria-labelledby="dropdownMenuReference" id="bell">
+                                    <div class="d-flex">
+                                        <div style="padding: 2%;padding-top: 4%;"><img src="images/first.png"
+                                                width="46px" height="46px" alt="This is first profile"></div>
+                                        <div class="mar">
+                                            <!-- <p class="drop1p1" ><strong>Bavid Kames</strong><br>Assigned you on call with sara</p> -->
+                                            <p class="drop1p1"><strong>Bavid Kames</strong></p>
+                                            <p class="drop1p2">Assigned you on call with sara Assigned you on call with sara</p>
+
+                                        </div>
+                                        <div class="time">
+                                            <p>2 min ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <div style="padding: 2%;padding-top: 4%;"><img src="images/second.png"
+                                                width="46px" height="46px" alt="This is first profile"></div>
+                                        <div class="mar">
+                                            <p class="drop1p1"><strong>Alexa Marry</strong></p>
+                                            <p class="drop1p2 ">Marked the <a href="#"
+                                                    style="text-decoration: none;color: blue;">New UI</a> as done</p>
+
+                                        </div>
+                                        <div class="time">
+                                            <p>5 min ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <div style="padding: 2%;padding-top: 4%;"><img src="images/third.png"
+                                                width="46px" height="46px" alt="This is first profile"></div>
+                                        <div class="mar">
+                                            <p class="drop1p1"><strong>Eva Maria</strong></p>
+                                            <p class="drop1p2 " style="font-size: 12px;">Added a new comment on sales
+                                                task</p>
+
+                                        </div>
+                                        <div class="time">
+                                            <p style="font-size: 12px;">10 min ago</p>
+                                        </div>
+                                    </div>
+                                    <hr class="dropdown-divider">
+                                    <div class="drop3"><a href="#">Show More</a></div>
+                                </div>
+
+                            </div>
+                            <div class="col-4">
+
+                                <div class="profileHover">
+                                    <a href="#" onclick="displayProfile();">
+                                        <div class="d-flex leftcorner  ">
+                                            <p style="padding-top: 5px;" id="d">John Doe</p>
+                                            <div class="down" id="e">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewbox="0 0 18 18">
+                                                    <defs>
+                                                        <style>
+                                                            .a,
+                                                            .b {
+                                                                fill: none;
+                                                            }
+
+                                                            .b {
+                                                                stroke: #a4afb7;
+                                                                stroke-linecap: round;
+                                                                stroke-linejoin: round;
+                                                            }
+                                                        </style>
+                                                    </defs>
+                                                    <g transform="translate(3 6)">
+                                                        <rect class="a" width="18" height="18"
+                                                            transform="translate(-3 -6)" />
+                                                        <path class="b" d="M7.159,0V7.159H0"
+                                                            transform="translate(5.562 -4.162) rotate(45)" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <img src="images/profile.png" alt="profile image" width="35px" height="35px"
+                                                style="margin-bottom: 20px;" id="f">
+                                        </div>
+
+                                    </a>
+                                    <div class="dropdown " id="m">
+                                        <div class="navbutton ">
+                                            <div class="flax">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewbox="0 0 24 24">
+                                                    <defs>
+                                                        <style>
+                                                            .a,
+                                                            .b {
+                                                                fill: none;
+                                                            }
+
+                                                            .b {
+                                                                stroke: #a4afb7;
+                                                                stroke-linecap: round;
+                                                                stroke-linejoin: round;
+                                                                stroke-miterlimit: 10;
+                                                            }
+                                                        </style>
+                                                    </defs>
+                                                    <rect class="a" width="24" height="24" />
+                                                    <g transform="translate(-940.946 -154.653)">
+                                                        <circle class="b" cx="4.259" cy="4.259" r="4.259"
+                                                            transform="translate(948.686 159.412)" />
+                                                        <path class="b" d="M945.921,230.571a7.9,7.9,0,0,1,14.05,0"
+                                                            transform="translate(0 -56.679)" />
+                                                    </g>
+                                                </svg>
+                                                <p>My Profile</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="navbutton">
+                                            <div class="navbutton ">
+                                                <div class="flax1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewbox="0 0 24 24">
+                                                        <defs>
+                                                            <style>
+                                                                .a,
+                                                                .b,
+                                                                .c {
+                                                                    fill: none;
+                                                                }
+
+                                                                .b,
+                                                                .c {
+                                                                    stroke: #a4afb7;
+                                                                    stroke-linecap: round;
+                                                                    stroke-linejoin: round;
+                                                                }
+
+                                                                .b {
+                                                                    stroke-miterlimit: 10;
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <g transform="translate(-864.333 -118.412)">
+                                                            <rect class="a" width="24" height="24"
+                                                                transform="translate(864.333 118.412)" />
+                                                            <g transform="translate(0.604 -0.294)">
+                                                                <path class="b"
+                                                                    d="M882.875,125.016V139.94l-2.247-2.084-2.169,2.084-2.447-2.084-2.323,2.084-2.154-2.084-2.453,2.084V125.016a2.853,2.853,0,0,1,2.854-2.854h8.085A2.853,2.853,0,0,1,882.875,125.016Z"
+                                                                    transform="translate(0)" />
+                                                                <path class="c" d="M872.132,126h8.057"
+                                                                    transform="translate(-0.149 1.869)" />
+                                                                <path class="c" d="M872.132,132.485h8.057"
+                                                                    transform="translate(-0.149 1.091)" />
+                                                                <path class="c" d="M872.132,128.971h4.518"
+                                                                    transform="translate(-0.149 1.752)" />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                    <p>billing</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="navbutton">
+                                                <div class="navbutton ">
+                                                    <div class="flax1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            viewbox="0 0 24 24">
+                                                            <defs>
+                                                                <style>
+                                                                    .a,
+                                                                    .b,
+                                                                    .c {
+                                                                        fill: none;
+                                                                    }
+
+                                                                    .b,
+                                                                    .c {
+                                                                        stroke: #a4afb7;
+                                                                        stroke-linecap: round;
+                                                                        stroke-miterlimit: 10;
+                                                                    }
+
+                                                                    .b {
+                                                                        stroke-linejoin: round;
+                                                                    }
+                                                                </style>
+                                                            </defs>
+                                                            <rect class="a" width="24" height="24" />
+                                                            <g transform="translate(-244.43 -213.127)">
+                                                                <path class="b"
+                                                                    d="M521.785,301.137l4.119,4.119-4.119,4.119"
+                                                                    transform="translate(-261.102 -80.151)" />
+                                                                <line class="c" x2="9.481"
+                                                                    transform="translate(255.321 225.105)" />
+                                                                <path class="b"
+                                                                    d="M257.407,232.53h-5.735a1.613,1.613,0,0,1-1.613-1.613V219.338a1.613,1.613,0,0,1,1.613-1.613h5.735" />
+                                                            </g>
+                                                        </svg>
+                                                        <p>Logout</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main id="chart">
+
+                <div class="row justify-content-between">
+
+                    <div class="col btmar" id="heading">
+                        <h5><strong>Overview</strong></h5>
+                    </div>
+
+                    <div class="col" id="marg"><button id="btn"> Add Funds <img src="images/plus.png"
+                                alt="This is plus icon"></button> </div>
+                </div>
+
+                <div class="mobile">
+                    <section class="section1 ">
+                        <section class="subSection1 hide"  id="subsection11">
+
+                            <div><img src="images/profile.png" alt="This is profile image"
+                                    style="width: 15%;height: 12%;text-align: center;margin-left: 40%;margin-top: 10%;">
+                            </div>
+                            <div class="edit"><img src="images/edit.png" alt="This id edit" id="Symbol"></div>
+                            <p class="ProfileName"><strong>Nick Herasimen</strong></p>
+                            <p class="country">United States</p>
+            
+                            <div class="d-flex" style="margin-top: -20%;margin-left: 34%;">
+            
+                                <img src="icons.png" alt="This is Twitter" class="twitter">
+                                <img src="icons.png" alt="This is facebook icon" class="facebook"
+                                    style="margin-left: 4%;">
+                                <img src="icons.png" alt="This is linkdin" class="linkdin" style="margin-left: 4%;">
+                                <img src="icons.png" alt="This is whatsapp" class="whatsapp" style="margin-left: 4%;">
+            
+                            </div>
+                            <div
+                                style="width:95%; height: 0px;border: 1px solid #F0F4F7;opacity: 1;margin-left: 2%;margin-top: 2%;">
+                            </div>
+            
+                            <div class="d-flex ">
+                                <p style="margin-left: 2%;margin-top: 5%;">Our Users</p>
+                                <img src="icons.png" alt="This is option" class="options"
+                                    style="margin-left: 70%; margin-top: 5%;">
+                            </div>
+            
+                            <div class="row">
+            
+                                <div class="col" style="margin-left: 4%;">
+                                    <img src="images/fourth.png" alt="fourth image">
+            
+            
+            
+                                </div>
+                                <div class="col">
+                                    <p style="font-size: 80%;margin-left: -40%;"><strong>Drew James</strong></p>
+                                    <p
+                                        style="font-size: 60%;margin-top: -2%;font-family: 'Source Sans Pro', sans-serif;margin-left: -40%;">
+                                        United States</p>
+            
+                                </div>
+                                <div class="col"
+                                    style="margin-top: 4%; color: #43425D;letter-spacing: 0px;font-family: 'Source Sans Pro', sans-serif;margin-left: -4%;">
+            
+                                    <p style="margin-left: -20%;">Mobile:8715674877</p>
+                                </div>
+            
+            
+                            </div>
+            
+                            <div class="row">
+            
+                                <div class="col" style="margin-left: 4%;">
+                                    <img src="images/fifth.png" alt="fourth image">
+            
+            
+            
+                                </div>
+                                <div class="col">
+                                    <p style="font-size: 80%;margin-left: -40%;"><strong>Bavid Kames</strong></p>
+                                    <p
+                                        style="font-size: 60%;margin-top: -2%;font-family: 'Source Sans Pro', sans-serif;margin-left: -40%;">
+                                        United States</p>
+            
+                                </div>
+                                <div class="col"
+                                    style="margin-top: 4%; color: #43425D;letter-spacing: 0px;font-family: 'Source Sans Pro', sans-serif;margin-left: -4%;">
+            
+                                    <p style="margin-left: -20%;">Mobile:8715674877</p>
+                                </div>
+            
+            
+                            </div>
+            
+                            <div class="row ">
+            
+                                <div class="col" style="margin-left: 4%;">
+                                    <img src="images/sixth.png" alt="fourth image">
+            
+            
+            
+                                </div>
+                                <div class="col">
+                                    <p style="font-size: 80%;margin-left: -40%;"><strong>Lavid Emes</strong></p>
+                                    <p
+                                        style="font-size: 60%;margin-top: -2%;font-family: 'Source Sans Pro', sans-serif;margin-left: -40%;">
+                                        United States</p>
+            
+                                </div>
+                                <div class="col"
+                                    style="margin-top: 4%; color: #43425D;letter-spacing: 0px;font-family: 'Source Sans Pro', sans-serif;margin-left: -4%;">
+            
+                                    <p style="margin-left: -20%;">Mobile:8715674877</p>
+                                </div>
+            
+            
+                            </div>
+            
+                        </section>
+                        <div class="row">
+                            <div class=" col-12 col-md-8  graph" id="chart1">
+
+
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+                                <canvas id="myChart" style="width:70%;height: 150%;"></canvas>
+
+                                <script>
+                                    var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+                                    var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+                                    new Chart("myChart", {
+                                        type: "line",
+                                        data: {
+                                            labels: xValues,
+                                            datasets: [{
+                                                fill: false,
+                                                lineTension: 0,
+                                                backgroundColor: "rgba(0,0,255,1)",
+                                                borderColor: "rgba(0,0,0,0)",
+                                                data: yValues
+                                            }]
+                                        },
+                                        options: {
+                                            legend: { display: false },
+                                            scales: {
+                                                yAxes: [{ ticks: { min: 6, max: 16 } }],
+                                            }
+                                        }
+                                    });
+                                </script>
+
+                            </div>
+                            <div class=" col-12 col-md-4 piechart">
+
+                                 <h8 style="color: grey;margin-left: 16%;margin-top: -40%;font-size: 80%;">World Wide Wine Production 2018</h8>
+
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>                               
+                                <canvas id="myChart1" style="width:70%;max-width:100%"></canvas>
+
+                                <script>
+                                var xValues = ["Italy", "France", "Spain", "USA"];
+                                var yValues = [255, 649, 344, 224];
+                                var barColors = [
+                                  "#80E2FF",
+                                  "#F49FA8",
+                                  "#FFDF94",
+                                  "#A3A0FB",
+                                  
+                                ];
+                                
+                                new Chart("myChart1", {
+                                  type: "doughnut",
+                                  data: {
+                                    labels: xValues,
+                                    datasets: [{
+                                      backgroundColor: barColors,
+                                      data: yValues
+                                    }]
+                                  },
+                                  options: {
+                                    title: {
+                                      display: true,
+                                      
+                                    }
+                                  }
+                                });
+                                </script>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row over">
+
+                        
+                                <h6 style="padding-top: 1%;">Referer</h6>
+                         
+
+                            <table>
+
+                                <tr>
+                                    <th>Location</th>
+                                    <th>views</th>
+                                    <th>Sales</th>
+                                    <th>Conversion</th>
+                                    <th>Total</th>
+
+                                </tr>
+                                <tr>
+                                    <td>google.com</td>
+                                    <td>3746</td>
+                                    <td>752</td>
+                                    <td>43%</td>
+                                    <td>$19.291</td>
+
+                                </tr>
+                                <tr>
+                                    <td>facebook.com</td>
+                                    <td>8126</td>
+                                    <td>728</td>
+                                    <td>32%</td>
+                                    <td>$17.635</td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>twitter.com</td>
+                                    <td>8836</td>
+                                    <td>294</td>
+                                    <td>28%</td>
+                                    <td>$16.218</td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>Direct,Email,ID</td>
+                                    <td>1143</td>
+                                    <td>645</td>
+                                    <td>24%</td>
+                                    <td>$14.4218</td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>linkdin.com</td>
+                                    <td>2739</td>
+                                    <td>2539</td>
+                                    <td>20%</td>
+                                    <td>$12.370</td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>instagram.com</td>
+                                    <td>2739</td>
+                                    <td>539</td>
+                                    <td>20%</td>
+                                    <td>$12.370</td>
+
+
+                                </tr>
+
+
+                            </table>
+                            <!-- <div class="line"></div> -->
+
+                            <a href="#" class="show">Show More</a>
+                        </div>
+
+
+
+                    </section>
+                    <section class="section2" id="f1">
+                        <section class="subSection1 hide1" id="subsection11">
+
+                            <div><img src="images/profile.png" alt="This is profile image"
+                                    style="width: 15%;height: 12%;text-align: center;margin-left: 40%;margin-top: 10%;">
+                            </div>
+                            <div class="edit"><img src="images/edit.png" alt="This id edit" id="Symbol"></div>
+                            <p class="ProfileName"><strong>Nick Herasimen</strong></p>
+                            <p class="country">United States</p>
+
+                            <div class="d-flex" style="margin-top: -20%;margin-left: 34%;">
+
+                                <img src="icons.png" alt="This is Twitter" class="twitter">
+                                <img src="icons.png" alt="This is facebook icon" class="facebook"
+                                    style="margin-left: 4%;">
+                                <img src="icons.png" alt="This is linkdin" class="linkdin" style="margin-left: 4%;">
+                                <img src="icons.png" alt="This is whatsapp" class="whatsapp" style="margin-left: 4%;">
+
+                            </div>
+                            <div
+                                style="width:95%; height: 0px;border: 1px solid #F0F4F7;opacity: 1;margin-left: 2%;margin-top: 2%;">
+                            </div>
+
+                            <div class="d-flex ">
+                                <p style="margin-left: 2%;margin-top: 5%;">Our Users</p>
+                                <img src="icons.png" alt="This is option" class="options"
+                                    style="margin-left: 70%; margin-top: 5%;">
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col" style="margin-left: 4%;">
+                                    <img src="images/fourth.png" alt="fourth image">
+
+
+
+                                </div>
+                                <div class="col">
+                                    <p style="font-size: 80%;margin-left: -40%;"><strong>Drew James</strong></p>
+                                    <p
+                                        style="font-size: 60%;margin-top: -2%;font-family: 'Source Sans Pro', sans-serif;margin-left: -40%;">
+                                        United States</p>
+
+                                </div>
+                                <div class="col"
+                                    style="margin-top: 4%; color: #43425D;letter-spacing: 0px;font-family: 'Source Sans Pro', sans-serif;margin-left: -4%;">
+
+                                    <p style="margin-left: -20%;">Mobile:8715674877</p>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col" style="margin-left: 4%;">
+                                    <img src="images/fifth.png" alt="fourth image">
+
+
+
+                                </div>
+                                <div class="col">
+                                    <p style="font-size: 80%;margin-left: -40%;"><strong>Bavid Kames</strong></p>
+                                    <p
+                                        style="font-size: 60%;margin-top: -2%;font-family: 'Source Sans Pro', sans-serif;margin-left: -40%;">
+                                        United States</p>
+
+                                </div>
+                                <div class="col"
+                                    style="margin-top: 4%; color: #43425D;letter-spacing: 0px;font-family: 'Source Sans Pro', sans-serif;margin-left: -4%;">
+
+                                    <p style="margin-left: -20%;">Mobile:8715674877</p>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row ">
+
+                                <div class="col" style="margin-left: 4%;">
+                                    <img src="images/sixth.png" alt="fourth image">
+
+
+
+                                </div>
+                                <div class="col">
+                                    <p style="font-size: 80%;margin-left: -40%;"><strong>Lavid Emes</strong></p>
+                                    <p
+                                        style="font-size: 60%;margin-top: -2%;font-family: 'Source Sans Pro', sans-serif;margin-left: -40%;">
+                                        United States</p>
+
+                                </div>
+                                <div class="col"
+                                    style="margin-top: 4%; color: #43425D;letter-spacing: 0px;font-family: 'Source Sans Pro', sans-serif;margin-left: -4%;">
+
+                                    <p style="margin-left: -20%;">Mobile:8715674877</p>
+                                </div>
+
+
+                            </div>
+
+                        </section>
+
+                        <section class="subsection2" id=>
+
+                            <div class="d-flex " >
+                                <p class="op2">Product Video</p>
+                                <img src="icons.png" alt="This is option" class="options op1">
+                            </div>
+
+                            <div >
+                                <video width="80%"  controls style="margin-left: 8%;margin-bottom: 6%;">
+                                    <source src="https://youtu.be/Oy6hk6Y7VHQ4">
+                                </video>
+                            </div>
+                            
+                        </section>
+
+
+                    </section>
+                </div>
+
+            </main>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
