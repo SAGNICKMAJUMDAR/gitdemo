@@ -10,4 +10,10 @@ Dilip Kumar Majumdar
 
 ABCD
 
+<<<<<<< HEAD
 Focus and conquer everything
+=======
+Hare Krishna
+
+Gopalo Gobindo
+>>>>>>> feature3
